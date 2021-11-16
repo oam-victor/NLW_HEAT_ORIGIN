@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    --black: hsl(240, 6%, 13%);
+    --gray: hsl(243, 9%, 89%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    min-height: 812px; 
+    max-width: 600px;
+    background: url(../imgs/Mobile.jpg) no-repeat center/cover;
+} 
+
+.container{
+    color: var(--gray);
+}
+
+#avatar{
+    text-align: center;
+    margin: 11.5rem auto 0;
+    width: 10rem;
+    position: relative;
+}
+
+#avatar img:nth-child(2){
+    width: 10rem;
+    height: 11.5rem;
+    object-fit: cover;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    /*css_clip_path_maker*/
+} 
+
+#avatar span{
+    position: absolute;
+    top: -15px;
+    z-index: 1;
+}
+
+h1{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0px;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    color: var(--gray);
+    text-decoration: none;
+}
+
+#avatar > p{
+    margin-top: 2rem;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 0.5rem;
+    padding: 0;
+    margin-top: 3rem;
+    list-style: none;
+}
+
+#userLogin{
+    padding: 0px;
+    margin: 0px;
+}
